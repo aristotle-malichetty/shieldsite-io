@@ -632,7 +632,35 @@ header.scrolled {
     color: #cbd5e1;
 }
 
-/* Contact Form */
+/* Calendar Booking */
+.calendar-wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 40px auto 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.calendar-wrapper iframe {
+    display: block;
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+.trust-badges span {
+    padding: 8px 0;
+}
+
+/* Legacy form styles (kept for compatibility) */
 .form-wrapper {
     max-width: 555px;
     width: 100%;
@@ -885,6 +913,19 @@ footer {
         font-size: 36px;
     }
 
+    .calendar-wrapper {
+        margin: 30px auto 20px;
+    }
+
+    .calendar-wrapper iframe {
+        height: 700px;
+    }
+
+    .trust-badges {
+        gap: 20px;
+        font-size: 14px;
+    }
+
     .form-wrapper {
         max-width: 100%;
         padding: 0 20px;
@@ -927,6 +968,22 @@ footer {
         right: 20px;
         width: 45px;
         height: 45px;
+    }
+
+    .calendar-wrapper {
+        margin: 20px auto 15px;
+    }
+
+    .calendar-wrapper iframe {
+        height: 650px;
+        border-radius: 8px;
+    }
+
+    .trust-badges {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 13px;
+        text-align: center;
     }
 
     .form-wrapper {
