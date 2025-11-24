@@ -659,15 +659,17 @@ header.scrolled {
 
 .trust-badges span {
     padding: 12px 24px;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 8px;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .trust-badges span:hover {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.22);
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Legacy form styles (kept for compatibility) */
@@ -729,13 +731,15 @@ header.scrolled {
 
 .contact-alt {
     font-size: 17px;
-    color: #e2e8f0;
+    color: #f1f5f9;
     margin-top: 35px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.05);
+    padding: 22px 32px;
+    background: rgba(255, 255, 255, 0.12);
     border-radius: 10px;
     display: inline-block;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-alt a {
