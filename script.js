@@ -227,5 +227,23 @@ const animateNumbers = () => {
 window.addEventListener('scroll', animateNumbers);
 animateNumbers(); // Check on load
 
+// FAQ Accordion functionality
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const faqItem = question.parentElement;
+        const isActive = faqItem.classList.contains('active');
+        
+        // Close all FAQs
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        // Open clicked FAQ if it wasn't active
+        if (!isActive) {
+            faqItem.classList.add('active');
+        }
+    });
+});
+
 console.log('🛡️ ShieldSite.io - Protecting websites since 2024');
 
