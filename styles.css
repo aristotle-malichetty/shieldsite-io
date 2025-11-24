@@ -649,15 +649,25 @@ header.scrolled {
 .trust-badges {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 40px;
+    margin: 35px auto 25px;
     flex-wrap: wrap;
-    color: #cbd5e1;
-    font-size: 15px;
+    color: #e2e8f0;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .trust-badges span {
-    padding: 8px 0;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trust-badges span:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
 }
 
 /* Legacy form styles (kept for compatibility) */
@@ -718,19 +728,29 @@ header.scrolled {
 }
 
 .contact-alt {
-    font-size: 16px;
-    color: #cbd5e1;
-    margin-top: 20px;
+    font-size: 17px;
+    color: #e2e8f0;
+    margin-top: 35px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .contact-alt a {
     color: #60a5fa;
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 
 .contact-alt a:hover {
-    text-decoration: underline;
+    color: #93c5fd;
+    background: rgba(96, 165, 250, 0.1);
+    text-decoration: none;
 }
 
 /* Footer */
@@ -922,8 +942,18 @@ footer {
     }
 
     .trust-badges {
-        gap: 20px;
-        font-size: 14px;
+        gap: 15px;
+        font-size: 15px;
+    }
+
+    .trust-badges span {
+        padding: 10px 20px;
+    }
+
+    .contact-alt {
+        font-size: 16px;
+        padding: 18px;
+        margin-top: 25px;
     }
 
     .form-wrapper {
@@ -982,8 +1012,24 @@ footer {
     .trust-badges {
         flex-direction: column;
         gap: 12px;
-        font-size: 13px;
+        font-size: 14px;
         text-align: center;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .trust-badges span {
+        padding: 12px 20px;
+    }
+
+    .contact-alt {
+        font-size: 15px;
+        padding: 16px;
+        margin-top: 25px;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .form-wrapper {
