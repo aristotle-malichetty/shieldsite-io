@@ -811,10 +811,12 @@ header.scrolled {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
+    opacity: 0;
 }
 
 .faq-item.active .faq-answer {
     max-height: 300px;
+    opacity: 1;
 }
 
 .faq-answer p {
